@@ -1,0 +1,4 @@
+accelem
+=======
+
+expectation maximization acceleration
