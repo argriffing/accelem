@@ -5,6 +5,19 @@ The most straightforward application of this solver is to accelerate
 the convergence of expectation-maximization algorithms for maximum likelihood
 estimation of parameters of statistical models.
 
+Step length notes:
+
+This is an implementation of equation (9) in the paper
+Simple and Globally Convergent Methods for Accelerating the Convergence
+of Any EM Algorithm.
+Ravi Varadhan and Christophe Roland.
+Scandinavian Journal of Statistics, Vol. 35: 335--353, 2008.
+
+This is the third of three schemes, labeled S3 in the paper,
+and according to the paper it has the nice properties of being 
+always negative and bounded, and it is a lower bound for the
+step length defined by scheme S1 when dot(r, v) < 0.
+
 """
 from __future__ import division, print_function, absolute_import
 

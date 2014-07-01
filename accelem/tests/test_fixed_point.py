@@ -1,4 +1,17 @@
 """
+Test algorithms to find the fixed point.
+
+Note that the squarem iteration is designed to accelerate
+expectation maximization (EM) which has the convenient property
+that f(f(...f(x))) is guaranteed to not diverge.
+It is not guaranteed to converge to the global optimum or extremum
+or even to a local extremum.  It may converge to a saddle point.
+
+Because of this underlying assumption, squarem is expected to fail
+when an iteration of the fixed point function does not move towards the 
+fixed point.  For example squarem fixed point acceleration
+will fail for f(x) = 2*x because f(f(...f(x))) diverges when x != 0.
+
 """
 from __future__ import division, print_function, absolute_import
 
