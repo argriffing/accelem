@@ -12,7 +12,7 @@ import functools
 
 import numpy as np
 
-from .optimize import OptimizeResult
+from scipy.optimize import OptimizeResult
 
 
 class _ConvergenceError(Exception):
