@@ -28,6 +28,9 @@ import numpy as np
 from scipy.optimize import OptimizeResult
 
 
+__all__ = ['fixed_point_squarem']
+
+
 class _ConvergenceError(Exception):
     pass
 

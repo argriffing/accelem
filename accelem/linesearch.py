@@ -18,6 +18,9 @@ import itertools
 import numpy as np
 
 
+__all__ = ['LineSearchError', 'jj97_qn2', 'jj93_linesearch']
+
+
 class LineSearchError(Exception):
     pass
 
